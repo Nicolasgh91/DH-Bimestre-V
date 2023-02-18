@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/DH-Bimestre-V.iml" filepath="$PROJECT_DIR$/.idea/DH-Bimestre-V.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Back End - I/ValidacionPagos - Template Pattern/ValidacionPagos.iml" filepath="$PROJECT_DIR$/Back End - I/ValidacionPagos - Template Pattern/ValidacionPagos.iml" />
+    </modules>
+  </component>
+</project>
