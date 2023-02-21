@@ -1,11 +1,12 @@
 package com.models.service;
 
-import com.models.Clasico;
-import com.models.Infantil;
-import com.models.Menu;
-import com.models.Vegetariano;
+import com.models.service.Menu;
+import com.models.service.impl.Clasico;
+import com.models.service.impl.Infantil;
+import com.models.service.impl.Vegetariano;
 
 import java.util.Scanner;
+
 
 public class Empleado {
     Scanner scanner;
@@ -13,21 +14,25 @@ public class Empleado {
     double precioBaseMenu;
 
     public Empleado(double precioBaseMenu) {
+
         this.precioBaseMenu = precioBaseMenu;
+        scanner = new Scanner(System.in);
+
     }
 
     public void getOpcionCliente(){
 
-        scanner = new Scanner(System.in);
         System.out.println("Hola! Por favor indique el menú que desea elegir:");
         System.out.println("Opción '1' Menú clásico");
-        System.out.println("Opción '2' Menú com.models.Vegetariano");
-        System.out.println("Opción '3' Menú com.models.Infantil");
+        System.out.println("Opción '2' Menú Vegetariano");
+        System.out.println("Opción '3' Menú Infantil");
         tipoDeMenu = scanner.nextInt();
+
 
         if (tipoDeMenu == 1)
         {
             Menu clasico = new Clasico(precioBaseMenu);
+
             clasico.calcularPrecioFinal();
         }
         else if (tipoDeMenu == 2)

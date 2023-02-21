@@ -1,10 +1,11 @@
-package com.models;
+package com.models.service.impl;
+import com.models.service.Menu;
 
 public class Vegetariano extends Menu {
     double precioEspecias;
-    static boolean tieneEspecias;
-    static int precioSalsaVegetariana;
-    static int cantidadSalsasVegetarianas;
+    private boolean tieneEspecias;
+    private int precioSalsaVegetariana;
+    private int cantidadSalsasVegetarianas;
 
     public Vegetariano(double precioBase, boolean tieneEspecias, int cantidadSalsasVegetarianas) {
         super(precioBase);
@@ -30,7 +31,7 @@ public class Vegetariano extends Menu {
         System.out.println("El precio final de su menú es: " + resultado);
     }
 
-    public static boolean isTieneEspecias() {
+    public boolean isTieneEspecias() {
         return tieneEspecias;
     }
 
@@ -42,7 +43,7 @@ public class Vegetariano extends Menu {
         this.precioEspecias = precioEspecias;
     }
 
-    public static int getPrecioSalsaVegetariana() {
+    public  int getPrecioSalsaVegetariana() {
         return precioSalsaVegetariana;
     }
 
@@ -54,7 +55,7 @@ public class Vegetariano extends Menu {
         this.tieneEspecias = tieneEspecias;
     }
 
-    public static int getCantidadSalsasVegetarianas() {
+    public int getCantidadSalsasVegetarianas() {
         return cantidadSalsasVegetarianas;
     }
 

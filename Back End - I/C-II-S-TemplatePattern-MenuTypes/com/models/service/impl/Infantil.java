@@ -1,8 +1,10 @@
-package com.models;
+package com.models.service.impl;
+
+import com.models.service.Menu;
 
 public class Infantil extends Menu {
-    static int cantidadJuguetes;
-    static int precioJuguete;
+    private int cantidadJuguetes;
+    private int precioJuguete;
 
     public Infantil(double precioBase, int cantidadJuguetes) {
         super(precioBase);
@@ -26,12 +28,14 @@ public class Infantil extends Menu {
         }
     }
 
-    public static int getCantidadJuguetes() {
-        return cantidadJuguetes;
+    public int getCantidadJuguetes() {
+
+        return this.cantidadJuguetes;
     }
 
-    public static int getPrecioJuguete() {
-        return precioJuguete;
+    public int getPrecioJuguete() {
+
+        return this.precioJuguete;
     }
 
     public void setPrecioJuguete(int precioJuguete) {

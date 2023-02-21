@@ -9,7 +9,7 @@ public abstract class Middleware {
 
         // Every next chain link
         for (Middleware nextInChain : chain){
-            // It assigns the next into the previous
+            // The first becomes the next
             head.next = nextInChain;
             // And the next as first
             head = nextInChain;
